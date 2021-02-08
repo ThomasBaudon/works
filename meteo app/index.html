@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appli Meteo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <div class="ville-container">
+            <h1>Ville</h1>
+            <p>Détail temps</p>
+        </div>
+
+        <div class="temperature-container">
+            <h2 class="temperature">
+                22
+            </h2>
+            <img class="weather-icon"  src="img/averses-soleil.svg" alt="weather-icon">
+        </div>
+
+        <div class="complement-meteo">
+
+            <div id="vent-container" class="vent-container">
+                <h3 class="vent">Vent</h3>
+                <p class="vitesse-vent">10 <span><sup>Km/h</sup></span></p>
+            </div>
+
+            <div id="humidite-container" class="humidite-container">
+                <h3 class="humidite">Humidité</h3>
+                <p class="humidite-pourcentage">10 <span><sup>%</sup></span></p>
+            </div>
+
+        </div>
+
+        <div class="date-container">
+            <h4 class="date">date</h4>
+            <p class="heure">16:00</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+    </div>
+
+    <script>
+        
+    </script>
+
+</body>
+</html>
