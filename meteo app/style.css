@@ -82,16 +82,54 @@ body {
 }
 
 .app-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: linear-gradient(135deg, #d6cfff, #AC9FFF, #7560F5);
-  border-radius: 1em;
   -webkit-box-shadow: 0px 4px 8px rgba(17, 14, 39, 0.4), 0px 16px 32px 8px rgba(90, 71, 214, 0.4), 0px 32px 48px 64px rgba(58, 47, 128, 0.15);
   box-shadow: 0px 4px 8px rgba(17, 14, 39, 0.4), 0px 16px 32px 8px rgba(90, 71, 214, 0.4), 0px 32px 48px 64px rgba(58, 47, 128, 0.15);
-  width: 25em;
+  width: 400px;
+  height: 560px;
   padding: 2em 1em;
+  border-radius: 1em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  /* z-index:-1; */
+  /*     &::before{
+        content: "";
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 25em;
+        height: 35em;
+        padding: 2em 1em;
+        border-radius: 1em;
+        z-index:-10;
+
+        background-image: url(../img/eclaircie.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(2px);
+
+        transform: translate(-50%, -50%);
+
+        opacity: .1;
+
+        mix-blend-mode: color;
+    } */
 }
 
 .ville-container {
   margin-bottom: 2em;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+  -webkit-filter: drop-shadow(0px 4px 8px rgba(56, 48, 104, 0.4));
+          filter: drop-shadow(0px 4px 8px rgba(56, 48, 104, 0.4));
 }
 
 .ville-container h1 {
@@ -144,6 +182,8 @@ body {
   text-align: center;
   margin-bottom: 0;
   opacity: .9;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
 }
 
 .temperature-container h2:after {
@@ -161,6 +201,8 @@ body {
   width: 33%;
   -webkit-filter: drop-shadow(0px 4px 8px rgba(56, 48, 104, 0.8));
           filter: drop-shadow(0px 4px 8px rgba(56, 48, 104, 0.8));
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
 }
 
 .complement-meteo {
@@ -275,7 +317,14 @@ body {
       align-content: center;
 }
 
-.search-container input, .search-container input {
+.search-container {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+  -webkit-filter: drop-shadow(0px 8px 16px rgba(56, 48, 104, 0.6));
+          filter: drop-shadow(0px 8px 16px rgba(56, 48, 104, 0.6));
+}
+
+.search-container input {
   border: none;
   padding: 0 !important;
   padding-left: 1em !important;
@@ -284,12 +333,12 @@ body {
   height: 40px;
 }
 
-.search-container input:focus, .search-container input:focus {
+.search-container input:focus {
   border: none;
   outline: none !important;
 }
 
-.search-container button, .search-container button {
+.search-container button {
   border: none;
   padding: 12px 12px;
   background-color: #e0dbff;
@@ -297,8 +346,14 @@ body {
   height: 40px;
 }
 
-.search-container button:focus, .search-container button:focus {
+.search-container button:focus {
   border: none;
   outline: none !important;
+}
+
+.test {
+  width: 300px;
+  height: 300px;
+  background-color: purple;
 }
 /*# sourceMappingURL=style.css.map */

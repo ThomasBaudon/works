@@ -121,6 +121,8 @@ body{
 
 .ville-container{
     margin-bottom: 2em;
+    transform: translateZ(20px);
+    filter: drop-shadow(0px 4px 8px rgba(56, 48, 104, .4));
 
     h1{
         color: var(--title-color) ;
@@ -160,6 +162,7 @@ body{
         text-align: center;
         margin-bottom: 0;
         opacity:.9;
+        transform: translateZ(50px);
         
         &:after{
             content: '°C';
@@ -175,7 +178,7 @@ body{
         text-align: center; 
         width: 33%;
         filter: drop-shadow(0px 4px 8px rgba(56, 48, 104, .8));
-        transform: translateZ(20px);
+        transform: translateZ(100px);
         
     }
 }
@@ -262,7 +265,10 @@ body{
 }
 
 
-.search-container, .search-container {
+.search-container{
+    transform: translateZ(20px);
+    filter: drop-shadow(0px 8px 16px rgba(56, 48, 104, .6));
+
     input{
             border: none;
             padding: 0 !important;
