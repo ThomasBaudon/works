@@ -6,21 +6,18 @@
     <title>Appli Meteo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/app.js"></script>
 </head>
 <body>
 
     <div class="app-container" data-tilt data-tilt-perspective="1500" data-tilt-speed="1000" data-tilt-max="20">
 
         <div class="ville-container">
-            <h1>Ville</h1>
-            <p>Détail temps</p>
+            <h1 class="ville" id="ville"></h1>
+            <p class="temps" id="temps"></p>
         </div>
 
         <div class="temperature-container">
-            <h2 class="temperature">
-                22
-            </h2>
+            <h2 class="temperature"></h2>
             <img class="weather-icon"  src="img/averses-soleil.svg" alt="weather-icon">
         </div>
 
@@ -55,7 +52,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js' integrity='sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==' crossorigin='anonymous'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.js' integrity='sha512-2RvNyAS83BFsPN236Mx44WiMVtWsTbr13jJ5qKaY6O5yItz8Sd/ajZATa0nhOIjR99p7drlTu3+9tOEXo9qCfQ==' crossorigin='anonymous'></script>
-
+    <script src="scripts/app.js"></script>
 
 </body>
 </html>
