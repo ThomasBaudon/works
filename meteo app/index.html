@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="app-container" data-tilt data-tilt-perspective="1500" data-tilt-speed="1000" data-tilt-max="20">
+    <div class="app-container" data-tilt data-tilt-perspective="1000" data-tilt-speed="800" data-tilt-max="60">
 
         <div class="ville-container">
             <h1 class="ville" id="ville"></h1>
@@ -18,31 +18,31 @@
 
         <div class="temperature-container">
             <h2 class="temperature"></h2>
-            <img class="weather-icon"  src="img/averses-soleil.svg" alt="weather-icon">
+            <img class="weather-icon weatherIcon"  src="" alt="weather-icon">
         </div>
 
         <div class="complement-meteo">
 
             <div id="vent-container" class="vent-container">
                 <h3 class="vent">Vent</h3>
-                <p class="vitesse-vent">10 <span><sup>Km/h</sup></span></p>
+                <p class="vitesse-vent"> <span class="vitesse-vent-detail"></span><span><sup>Km/h</sup></span></p>
             </div>
 
             <div id="humidite-container" class="humidite-container">
                 <h3 class="humidite">Humidité</h3>
-                <p class="humidite-pourcentage">10 <span><sup>%</sup></span></p>
+                <p class="humidite-pourcentage"><span class="humidite-pourcentage-detail"></span><span><sup>%</sup></span></p>
             </div>
 
         </div>
 
         <div class="date-container">
             <h4 class="date">date</h4>
-            <p id="heure" class="heure">16:00</p>
+            <p id="heure" class="heure"></p>
         </div>
 
         <div class="search-container">
-            <input type="text" placeholder="Rechercher..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Rechercher..." name="search" class="input_text" id="input_text">
+            <button type="submit" value="Submit" class="submit"><i class="fa fa-search"></i></button>
         </div>
 
     </div>
